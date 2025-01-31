@@ -2,20 +2,16 @@
   <div class="navbar">
     <Logo />
     <BaseLayout />
+    <Token />
   </div>
-  <router-view></router-view>
+  <RouterView/>
 </template>
 
-<script>
-import Logo from "./Logo.vue";
+<script setup>
 import BaseLayout from "./BaseLayout.vue";
-
-export default {
-  components: {
-    Logo,
-    BaseLayout,
-  },
-};
+import Logo from "./Logo.vue";
+import Token from "./Token.vue";
+import { RouterView } from "vue-router";
 </script>
 
 <style scoped>
@@ -23,16 +19,15 @@ export default {
   margin: 0 auto;
   display: flex;
   gap: 20px;
-  justify-content: space-between; /* Space between items */
+  justify-content: space-around;
   align-items: center;
-  padding: 5px 20px; /* Adjusted padding */
-  background-color: #1e1e1e; /* Dark background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-  border-bottom: 2px solid #333; /* Bottom border */
+  padding: 5px 20px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #333;
 }
 
 .navbar Logo {
   margin-right: 40px;
 }
-
 </style>

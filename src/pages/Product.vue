@@ -288,4 +288,6 @@ const resetForm = () => {
   }
 };
 </script>
-<style scoped></style>
+<style scoped>
+  
+</style>

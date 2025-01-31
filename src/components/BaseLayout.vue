@@ -1,17 +1,12 @@
 <template lang="">
   <div>
-    <router-link to="/">Home</router-link>
+    <router-link to="/home">Home</router-link>
     <router-link to="/product">Product</router-link>
     <router-link to="/about">About</router-link>
   </div>
 </template>
 
-<script>
-export default {
-  name: "BaseLayout",
-};
-</script>
-
+<script setup></script>
 <style scoped>
 div {
   margin: 0 auto;
@@ -29,7 +24,7 @@ a {
 }
 
 a:hover {
-  color: dodgerblue
+  color: dodgerblue;
   /* text-decoration: underline; */
 }
 

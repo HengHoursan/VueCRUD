@@ -136,6 +136,7 @@ export default {
 
 /* Technologies List */
 .technologies {
+  cursor: pointer;
   text-align: left;
   margin-bottom: 25px;
 }

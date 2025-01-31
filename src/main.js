@@ -5,7 +5,9 @@ import App from "./App.vue";
 import router from "./routes";
 import "../src/assets/main.css";
 import "./firebaseConfig";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 const app = createApp(App);
 app.use(ElementPlus);
-app.use(router).mount("#app");
+app.use(router)
+app.mount("#app");

@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <div>
     <img src="../assets/images/vuejs.png" alt="Vue Logo" class="vue-image" />
   </div>
